@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Guess a number</string>
+    <string name="normal_dialogue">What number between 1-100 am I thinking of?</string>
+    <string name="easy_dialogue">What number between 1-10 am I thinking of?</string>
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button_easy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:background="@android:color/holo_green_light"
+        android:text="Easy"
+        android:layout_below="@+id/text_title"
+        android:layout_toLeftOf="@+id/button_normal"
+        android:layout_toStartOf="@+id/button_normal" />
+
+    <Button
+        android:id="@+id/button_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:text="Normal"
+        android:layout_alignBaseline="@+id/button_easy"
+        android:layout_alignBottom="@+id/button_easy"
+        android:layout_alignRight="@+id/text_guess"
+        android:layout_alignEnd="@+id/text_guess" />
+
+    <EditText
+        android:id="@+id/text_guess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="Guess a number..."
+        android:inputType="textPersonName"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:layout_below="@+id/image_bender"
+        android:layout_alignRight="@+id/text_title"
+        android:layout_alignEnd="@+id/text_title" />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:text="Guessing game"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button_minus"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/text_guess"
+        android:layout_toLeftOf="@+id/text_guess"
+        android:layout_toStartOf="@+id/text_guess"
+        android:text="-"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/button_plus"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/text_guess"
+        android:layout_toEndOf="@+id/text_guess"
+        android:layout_toRightOf="@+id/text_guess"
+        android:text="+"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/image_bender"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/images"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/button_easy"
+        android:layout_alignStart="@+id/button_easy" />
+
+    <TextView
+        android:id="@+id/text_dialog"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="dialogue text"
+        android:textSize="12sp"
+        android:layout_marginTop="38dp"
+        android:layout_alignTop="@+id/image_bender"
+        android:layout_toRightOf="@+id/button_normal"
+        android:layout_toEndOf="@+id/button_normal" />
+
+    <Button
+        android:id="@+id/switch_guess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Guess"
+        android:textSize="12sp"
+        android:layout_below="@+id/text_guess"
+        android:layout_toLeftOf="@+id/button_normal"
+        android:layout_toStartOf="@+id/button_normal"
+        android:layout_marginRight="35dp"
+        android:layout_marginEnd="35dp" />
+
+    <TextView
+        android:id="@+id/text_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/switch_guess"
+        android:layout_alignBottom="@+id/switch_guess"
+        android:layout_alignEnd="@+id/text_dialog"
+        android:layout_alignRight="@+id/text_dialog"
+        android:text="Number of guesses: 0" />
+
+</RelativeLayout>
